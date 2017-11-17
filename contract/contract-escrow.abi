@@ -1,0 +1,85 @@
+[{
+    "constant": true,
+    "inputs": [],
+    "name": "deadline",
+    "outputs": [{ "name": "", "type": "uint256" }],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+}, {
+    "constant": false,
+    "inputs": [{ "name": "amount", "type": "uint256" }],
+    "name": "withdraw",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+}, {
+    "constant": false,
+    "inputs": [{ "name": "amount", "type": "uint256" }],
+    "name": "release",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+}, {
+    "constant": true,
+    "inputs": [],
+    "name": "minimum",
+    "outputs": [{ "name": "", "type": "uint256" }],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+}, {
+    "constant": true,
+    "inputs": [],
+    "name": "collector",
+    "outputs": [{ "name": "", "type": "address" }],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+}, {
+    "constant": true,
+    "inputs": [],
+    "name": "released",
+    "outputs": [{ "name": "", "type": "uint256" }],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+}, {
+    "constant": true,
+    "inputs": [{ "name": "", "type": "address" }],
+    "name": "deposits",
+    "outputs": [{ "name": "", "type": "uint256" }],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+}, {
+    "inputs": [{ "name": "min", "type": "uint256" }, { "name": "date", "type": "uint256" }],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+}, { "payable": true, "stateMutability": "payable", "type": "fallback" }, {
+    "anonymous": false,
+    "inputs": [{ "indexed": true, "name": "sender", "type": "address" }, {
+        "indexed": false,
+        "name": "amount",
+        "type": "uint256"
+    }],
+    "name": "Deposit",
+    "type": "event"
+}, {
+    "anonymous": false,
+    "inputs": [{ "indexed": true, "name": "sender", "type": "address" }, {
+        "indexed": false,
+        "name": "amount",
+        "type": "uint256"
+    }],
+    "name": "Withdrawal",
+    "type": "event"
+}, {
+    "anonymous": false,
+    "inputs": [{ "indexed": false, "name": "amount", "type": "uint256" }],
+    "name": "Release",
+    "type": "event"
+}]

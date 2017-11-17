@@ -1,0 +1,102 @@
+[{
+    "constant": false,
+    "inputs": [{ "name": "a", "type": "uint256" }],
+    "name": "fact",
+    "outputs": [{ "name": "", "type": "uint256" }],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+}, {
+    "constant": false,
+    "inputs": [{ "name": "a", "type": "uint256" }, { "name": "b", "type": "uint256" }],
+    "name": "pow",
+    "outputs": [{ "name": "", "type": "uint256" }],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+}, {
+    "constant": false,
+    "inputs": [{ "name": "a", "type": "int256" }, { "name": "b", "type": "int256" }],
+    "name": "div",
+    "outputs": [{ "name": "", "type": "int256" }],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+}, {
+    "constant": false,
+    "inputs": [{ "name": "a", "type": "int256" }],
+    "name": "isNegative",
+    "outputs": [{ "name": "", "type": "bool" }],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+}, {
+    "constant": true,
+    "inputs": [],
+    "name": "owner",
+    "outputs": [{ "name": "", "type": "address" }],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+}, {
+    "constant": false,
+    "inputs": [{ "name": "a", "type": "int256" }, { "name": "b", "type": "int256" }],
+    "name": "sum",
+    "outputs": [{ "name": "", "type": "int256" }],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+}, {
+    "constant": false,
+    "inputs": [{ "name": "a", "type": "int256" }, { "name": "b", "type": "int256" }],
+    "name": "mult",
+    "outputs": [{ "name": "", "type": "int256" }],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+}, { "inputs": [], "payable": false, "stateMutability": "nonpayable", "type": "constructor" }, {
+    "anonymous": false,
+    "inputs": [{ "indexed": false, "name": "a", "type": "int256" }, {
+        "indexed": false,
+        "name": "b",
+        "type": "int256"
+    }, { "indexed": false, "name": "c", "type": "int256" }],
+    "name": "Sum",
+    "type": "event"
+}, {
+    "anonymous": false,
+    "inputs": [{ "indexed": false, "name": "a", "type": "int256" }, {
+        "indexed": false,
+        "name": "b",
+        "type": "int256"
+    }, { "indexed": false, "name": "c", "type": "int256" }],
+    "name": "Mult",
+    "type": "event"
+}, {
+    "anonymous": false,
+    "inputs": [{ "indexed": false, "name": "a", "type": "int256" }, {
+        "indexed": false,
+        "name": "b",
+        "type": "int256"
+    }, { "indexed": false, "name": "c", "type": "int256" }],
+    "name": "Div",
+    "type": "event"
+}, {
+    "anonymous": false,
+    "inputs": [{ "indexed": false, "name": "a", "type": "int256" }, {
+        "indexed": false,
+        "name": "b",
+        "type": "uint256"
+    }, { "indexed": false, "name": "c", "type": "uint256" }],
+    "name": "Pow",
+    "type": "event"
+}, {
+    "anonymous": false,
+    "inputs": [{ "indexed": false, "name": "a", "type": "uint256" }, {
+        "indexed": false,
+        "name": "c",
+        "type": "uint256"
+    }],
+    "name": "Factorial",
+    "type": "event"
+}]

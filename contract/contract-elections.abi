@@ -1,0 +1,144 @@
+BallotBox
+    [{
+    "constant": false,
+    "inputs": [],
+    "name": "close",
+    "outputs": [{ "name": "", "type": "bool" }],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+}, {
+    "constant": true,
+    "inputs": [],
+    "name": "isOpen",
+    "outputs": [{ "name": "", "type": "bool" }],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+}, {
+    "constant": true,
+    "inputs": [{ "name": "", "type": "uint16" }],
+    "name": "votes",
+    "outputs": [{ "name": "", "type": "uint256" }],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+}, {
+    "constant": true,
+    "inputs": [],
+    "name": "owner",
+    "outputs": [{ "name": "", "type": "address" }],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+}, {
+    "constant": true,
+    "inputs": [],
+    "name": "id",
+    "outputs": [{ "name": "", "type": "uint16" }],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+}, {
+    "constant": false,
+    "inputs": [{ "name": "candidate", "type": "uint16" }],
+    "name": "vote",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+}, {
+    "inputs": [{ "name": "_id", "type": "uint16" }, { "name": "_candidates", "type": "uint16" }, {
+        "name": "_mainbox",
+        "type": "address"
+    }], "payable": false, "stateMutability": "nonpayable", "type": "constructor"
+}, { "payable": false, "stateMutability": "nonpayable", "type": "fallback" }, {
+    "anonymous": false,
+    "inputs": [{ "indexed": true, "name": "sender", "type": "address" }, {
+        "indexed": false,
+        "name": "candidate",
+        "type": "uint16"
+    }],
+    "name": "Vote",
+    "type": "event"
+}]
+
+MainBox
+    [{
+    "constant": true,
+    "inputs": [],
+    "name": "_boxes",
+    "outputs": [{ "name": "", "type": "uint16" }],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+}, {
+    "constant": true,
+    "inputs": [],
+    "name": "_deadline",
+    "outputs": [{ "name": "", "type": "uint256" }],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+}, {
+    "constant": true,
+    "inputs": [{ "name": "", "type": "uint16" }],
+    "name": "totalVotes",
+    "outputs": [{ "name": "", "type": "uint256" }],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+}, {
+    "constant": false,
+    "inputs": [],
+    "name": "makeCount",
+    "outputs": [{ "name": "", "type": "bool" }],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+}, {
+    "constant": true,
+    "inputs": [{ "name": "", "type": "uint16" }],
+    "name": "ballotboxes",
+    "outputs": [{ "name": "", "type": "address" }],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+}, {
+    "constant": true,
+    "inputs": [],
+    "name": "owner",
+    "outputs": [{ "name": "", "type": "address" }],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+}, {
+    "constant": false,
+    "inputs": [],
+    "name": "alreadyVote",
+    "outputs": [{ "name": "", "type": "bool" }],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+}, {
+    "constant": false,
+    "inputs": [],
+    "name": "markMyVote",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+}, {
+    "constant": true,
+    "inputs": [],
+    "name": "_candidates",
+    "outputs": [{ "name": "", "type": "uint16" }],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+}, {
+    "inputs": [{ "name": "candidates", "type": "uint16" }, { "name": "boxes", "type": "uint16" }, {
+        "name": "deadline",
+        "type": "uint256"
+    }], "payable": false, "stateMutability": "nonpayable", "type": "constructor"
+}, { "payable": false, "stateMutability": "nonpayable", "type": "fallback" }]

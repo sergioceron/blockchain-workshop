@@ -1,0 +1,54 @@
+[{
+    "constant": false,
+    "inputs": [{ "name": "id", "type": "uint256" }, { "name": "message", "type": "string" }],
+    "name": "edit",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+}, {
+    "constant": false,
+    "inputs": [{ "name": "id", "type": "uint256" }],
+    "name": "remove",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+}, {
+    "constant": false,
+    "inputs": [{ "name": "message", "type": "string" }],
+    "name": "post",
+    "outputs": [{ "name": "", "type": "uint256" }],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+}, {
+    "constant": true,
+    "inputs": [{ "name": "", "type": "address" }, { "name": "", "type": "uint256" }],
+    "name": "messages",
+    "outputs": [{ "name": "message", "type": "string" }, { "name": "status", "type": "uint8" }],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+}, {
+    "constant": true,
+    "inputs": [],
+    "name": "admin",
+    "outputs": [{ "name": "", "type": "address" }],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+}, { "inputs": [], "payable": false, "stateMutability": "nonpayable", "type": "constructor" }, {
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "fallback"
+}, {
+    "anonymous": false,
+    "inputs": [{ "indexed": true, "name": "author", "type": "address" }, {
+        "indexed": true,
+        "name": "action",
+        "type": "uint8"
+    }, { "indexed": false, "name": "message", "type": "string" }],
+    "name": "Log",
+    "type": "event"
+}]
