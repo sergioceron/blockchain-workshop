@@ -71,7 +71,7 @@ The contract files is located in the subdirectory contract.
 3. Open another terminal window and execute ```geth attach``` to deploy the contract
     ```javascript
     > var contract = web3.eth.contract(ABI_INTERFACE);
-    > var instance = definition.new({
+    > var instance = contract.new({
                                from: 'your coinbase address', 
                                data: CONTRACT_BYTECODE, 
                                gas: '4700000'
