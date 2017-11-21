@@ -10,9 +10,9 @@ The structure of this practice is as follows.
 
 # 1. Setup Enviroment
 First, we need to setup our development environment.
-  - For Windows 7,8,10. [Instructions-Win.md](Installaction-Win.md)
-  - For Unix (Ubuntu 16.04). [Instructions-Unix.md](Installaction-Unix.md)
-  - For MacOS ElCapitan and Sierra. [Instructions-OSX.md](Installaction-OSX.md)
+  - For Windows 7,8,10. [Instructions-Win.md](Installation-Win.md)
+  - For Unix (Ubuntu 16.04). [Instructions-Unix.md](Installation-Unix.md)
+  - For MacOS ElCapitan and Sierra. [Instructions-OSX.md](Installation-OSX.md)
   
 # 2. Run Ethereum Full Node
 To configure ethereum in private network mode:
