@@ -77,7 +77,7 @@ The contract files is located in the subdirectory contract.
                                gas: '4700000'
                      }, function (e, c){
                            if (typeof c.address !== 'undefined') {
-                               console.log('Contract mined! address: ' + contract.address + ' transactionHash: ' + c.transactionHash);
+                               console.log('Contract mined! address: ' + c.address + ' transactionHash: ' + c.transactionHash);
                            }
                      });
     ```
